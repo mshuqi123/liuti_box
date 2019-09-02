@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tinymce',     # 富文本编辑器
+    # 'tinymce',     # 富文本编辑器
     'box_request',
     'xadmin',            # 新添加
     'crispy_forms',      # 新添加
