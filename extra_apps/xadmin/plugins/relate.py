@@ -165,7 +165,7 @@ class BaseRelateDisplayPlugin(BaseAdminPlugin):
         return RELATE_PREFIX + self.relate_obj.lookup, self.relate_obj.value
 
     def _get_input(self):
-        return '<input media="hidden" name="%s" value="%s" />' % self._get_relate_params()
+        return '<input type="hidden" name="%s" value="%s" />' % self._get_relate_params()
 
     def _get_url(self, url):
         return url + ('&' if url.find('?') > 0 else '?') + ('%s=%s' % self._get_relate_params())

@@ -180,7 +180,7 @@ class WizardFormPlugin(BaseAdminPlugin):
                 continue
             if exclude and f.name in exclude:
                 continue
-            # Defer saving file-media fields until after the other fields, so a
+            # Defer saving file-type fields until after the other fields, so a
             # callable upload_to can use the values from other fields.
             if isinstance(f, models.FileField):
                 file_field_list.append(f)

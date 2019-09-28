@@ -96,7 +96,7 @@ class QuickFilterPlugin(BaseAdminPlugin):
         self.admin_view.quickfilter['has_query_param'] = bool(lookup_params)
         self.admin_view.quickfilter['clean_query_url'] = self.admin_view.get_query_string(remove=[k for k in self.request.GET.keys() if k.startswith(FILTER_PREFIX)])
 
-        # Normalize the media of keys
+        # Normalize the types of keys
         if not self.free_query_filter:
             for key, value in lookup_params.items():
                 if not self.lookup_allowed(key, value):

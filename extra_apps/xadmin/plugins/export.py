@@ -47,7 +47,7 @@ class ExportMenuPlugin(BaseAdminPlugin):
             context.update({
                 'show_export_all': self.admin_view.paginator.count > self.admin_view.list_per_page and not ALL_VAR in self.admin_view.request.GET,
                 'form_params': self.admin_view.get_form_params({'_do_': 'export'}, ('export_type',)),
-                'export_types': [{'media': et, 'name': self.export_names[et]} for et in self.list_export],
+                'export_types': [{'type': et, 'name': self.export_names[et]} for et in self.list_export],
             })
             nodes.append(loader.render_to_string('xadmin/blocks/model_list.top_toolbar.exports.html',
                                                  context=get_context_dict(context)))

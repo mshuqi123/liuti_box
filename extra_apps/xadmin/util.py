@@ -168,7 +168,7 @@ def flatten_fieldsets(fieldsets):
     field_names = []
     for name, opts in fieldsets:
         for field in opts['fields']:
-            # media checking feels dirty, but it seems like the best way here
+            # type checking feels dirty, but it seems like the best way here
             if type(field) == tuple:
                 field_names.extend(field)
             else:

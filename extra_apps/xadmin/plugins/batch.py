@@ -40,7 +40,7 @@ class ChangeFieldWidgetWrapper(forms.Widget):
         output = []
         is_required = self.widget.is_required
         output.append(u'<label class="btn btn-info btn-xs">'
-            '<input media="checkbox" class="batch-field-checkbox" name="%s" value="%s"%s/> %s</label>' %
+            '<input type="checkbox" class="batch-field-checkbox" name="%s" value="%s"%s/> %s</label>' %
             (BATCH_CHECKBOX_NAME, name, (is_required and ' checked="checked"' or ''), _('Change this field')))
         output.extend([('<div class="control-wrap" style="margin-top: 10px;%s" id="id_%s_wrap_container">' %
             ((not is_required and 'display: none;' or ''), name)),

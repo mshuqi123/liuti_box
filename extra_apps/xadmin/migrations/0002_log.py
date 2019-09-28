@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('object_repr', models.CharField(max_length=200, verbose_name='object repr')),
                 ('action_flag', models.PositiveSmallIntegerField(verbose_name='action flag')),
                 ('message', models.TextField(blank=True, verbose_name='change message')),
-                ('content_type', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='contenttypes.ContentType', verbose_name='content media')),
+                ('content_type', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='contenttypes.ContentType', verbose_name='content type')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='user')),
             ],
             options={

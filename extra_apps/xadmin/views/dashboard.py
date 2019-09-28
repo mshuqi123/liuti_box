@@ -43,7 +43,7 @@ class WidgetTypeSelect(forms.Widget):
         if options:
             output.append(options)
         output.append(u'</ul>')
-        output.append('<input media="hidden" id="%s_input" name="%s" value="%s"/>' %
+        output.append('<input type="hidden" id="%s_input" name="%s" value="%s"/>' %
                       (final_attrs['id'], name, force_text(value)))
         return mark_safe(u'\n'.join(output))
 
@@ -525,7 +525,7 @@ class Dashboard(CommAdminView):
             portal_col = []
             for opts in col:
                 try:
-                    widget = UserWidget(user=self.user, page_id=self.get_page_id(), widget_type=opts['media'])
+                    widget = UserWidget(user=self.user, page_id=self.get_page_id(), widget_type=opts['type'])
                     widget.set_value(opts)
                     widget.save()
                     portal_col.append(self.get_widget(widget))

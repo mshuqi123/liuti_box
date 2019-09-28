@@ -94,8 +94,41 @@ class Http_connect(models.Model):
         verbose_name_plural = verbose_name
     def __str__(self):
         return self.yname
-
-
+class Api_path(models.Model):
+    '''接口路径列表'''
+    name = models.CharField(max_length=100, verbose_name="接口名称" , unique=True, default="")
+    id = models.IntegerField(verbose_name="接口编号", unique=True, default="")
+    path = models.CharField(max_length=100, primary_key=True, verbose_name="接口路径", default="")
+    state_choices = (
+        (u'J', u'禁用'),
+        (u'Q', u'启用'),
+    )
+    state = models.CharField(max_length=10,
+                             choices=state_choices,
+                             verbose_name="状态",
+                             default="J")
+    # 创建时间
+    create_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+    # 最后更新时间
+    update_time = models.DateTimeField(auto_now=True, verbose_name="最后更新时间")
+    class Meta:
+        db_table = 'box_api_path'
+        verbose_name = "接口列表"
+        verbose_name_plural = verbose_name
+    def __str__(self):
+        return self.path
+class Get_time(models.Model):
+    '''接口响应时间列表'''
+    name = models.CharField(max_length=100, verbose_name="接口名称", blank=True, null=True, default="")
+    path = models.CharField(max_length=100, verbose_name="接口路径", default="")
+    xtime = models.FloatField(default="", verbose_name='响应时间')
+    get_time = models.CharField(max_length=100, verbose_name="请求时间", blank=True, null=True, default="")
+    class Meta:
+        db_table = 'box_get_time'
+        verbose_name = "响应时间"
+        verbose_name_plural = verbose_name
+    def __str__(self):
+        return self.path
 
 
 

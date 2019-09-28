@@ -191,7 +191,7 @@ class BaseAdminObject(object):
             else:
                 p[k] = v
         return mark_safe(''.join(
-            '<input media="hidden" name="%s" value="%s"/>' % (k, v) for k, v in p.items() if v))
+            '<input type="hidden" name="%s" value="%s"/>' % (k, v) for k, v in p.items() if v))
 
     def render_response(self, content, response_type='json'):
         if response_type == 'json':

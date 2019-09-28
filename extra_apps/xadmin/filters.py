@@ -82,7 +82,7 @@ class FieldFilterManager(object):
 
     def register(self, list_filter_class, take_priority=False):
         if take_priority:
-            # This is to allow overriding the default filters for certain media
+            # This is to allow overriding the default filters for certain types
             # of fields with some custom filters. The first found in the list
             # is used in priority.
             self._field_list_filters.insert(

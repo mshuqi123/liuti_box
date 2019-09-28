@@ -41,7 +41,7 @@ class DeleteField(Field):
 
     def render(self, form, form_style, context, template_pack=TEMPLATE_PACK, **kwargs):
         if form.instance.pk:
-            self.attrs['media'] = 'hidden'
+            self.attrs['type'] = 'hidden'
             return super(DeleteField, self).render(form, form_style, context, template_pack=TEMPLATE_PACK, **kwargs)
         else:
             return ""

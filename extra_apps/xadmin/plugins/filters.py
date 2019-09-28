@@ -89,7 +89,7 @@ class FilterPlugin(BaseAdminPlugin):
         self.admin_view.clean_query_url = self.admin_view.get_query_string(remove=[k for k in self.request.GET.keys() if
                                                                                    k.startswith(FILTER_PREFIX)])
 
-        # Normalize the media of keys
+        # Normalize the types of keys
         if not self.free_query_filter:
             for key, value in lookup_params.items():
                 if not self.lookup_allowed(key, value):
@@ -112,7 +112,7 @@ class FilterPlugin(BaseAdminPlugin):
                     else:
                         # This is simply a field name, so use the default
                         # FieldListFilter class that has been registered for
-                        # the media of the given field.
+                        # the type of the given field.
                         field, field_list_filter_class = list_filter, filter_manager.create
                     if not isinstance(field, models.Field):
                         field_path = field

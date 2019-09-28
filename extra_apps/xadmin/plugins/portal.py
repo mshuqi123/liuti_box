@@ -58,7 +58,7 @@ class ModelFormPlugin(BasePortalPlugin):
 
     def block_form_top(self, context, node):
         # put portal key and submit url to page
-        return "<input media='hidden' id='_portal_key' value='%s' />" % self._portal_key()
+        return "<input type='hidden' id='_portal_key' value='%s' />" % self._portal_key()
 
 
 class ModelDetailPlugin(ModelFormPlugin):
@@ -68,7 +68,7 @@ class ModelDetailPlugin(ModelFormPlugin):
 
     def block_after_fieldsets(self, context, node):
         # put portal key and submit url to page
-        return "<input media='hidden' id='_portal_key' value='%s' />" % self._portal_key()
+        return "<input type='hidden' id='_portal_key' value='%s' />" % self._portal_key()
 
 site.register_plugin(ModelFormPlugin, ModelFormAdminView)
 site.register_plugin(ModelDetailPlugin, DetailAdminView)

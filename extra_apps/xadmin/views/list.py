@@ -466,7 +466,7 @@ class ListAdminView(ModelAdminView):
         o_list_asc = []  # URL for making this field the primary sort
         o_list_desc = []  # URL for making this field the primary sort
         o_list_remove = []  # URL for removing this field from sort
-        o_list_toggle = []  # URL for toggling order media for this field
+        o_list_toggle = []  # URL for toggling order type for this field
         make_qs_param = lambda t, n: ('-' if t == 'desc' else '') + str(n)
 
         for j, ot in ordering_field_columns.items():

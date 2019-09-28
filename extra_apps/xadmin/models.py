@@ -23,9 +23,9 @@ AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 def add_view_permissions(sender, **kwargs):
     """
     This syncdb hooks takes care of adding a view permission too all our
-    content media.
+    content types.
     """
-    # for each of our content media
+    # for each of our content types
     for content_type in ContentType.objects.all():
         # build our permission slug
         codename = "view_%s" % content_type.model
@@ -114,7 +114,7 @@ class UserWidget(models.Model):
     def get_value(self):
         value = json.loads(self.value)
         value['id'] = self.id
-        value['media'] = self.widget_type
+        value['type'] = self.widget_type
         return value
 
     def set_value(self, obj):
@@ -156,7 +156,7 @@ class Log(models.Model):
     content_type = models.ForeignKey(
         ContentType,
         models.SET_NULL,
-        verbose_name=_('content media'),
+        verbose_name=_('content type'),
         blank=True, null=True,
     )
     object_id = models.TextField(_('object id'), blank=True, null=True)

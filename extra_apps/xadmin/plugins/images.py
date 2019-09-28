@@ -13,7 +13,7 @@ def get_gallery_modal():
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button media="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title"></h4>
               </div>
               <div class="modal-body"><div class="modal-image"><h1 class="loader"><i class="fa-spinner fa-spin fa fa-large loader"></i></h1></div></div>
