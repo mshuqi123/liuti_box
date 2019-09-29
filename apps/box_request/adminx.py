@@ -48,11 +48,21 @@ class Http_connectAdmin(object):
     list_per_page = 10
     model_icon = 'fa fa-unlock'
 class API_pathAdmin(object):
-    list_display = ['name','id','path','state','update_time']
+    list_display = ['name','id','path','state','update_time', '操作']
     search_fields = ['id','name','path','state']  # 搜索栏
     list_filter = ['state']  # 过滤器
     list_per_page = 10
     model_icon = 'fa fa-hdd-o'
+
+    def 操作(self, obj):
+        button = '<p id="%d" class="default btn btn-primary hide-xs" onclick="click_action_info(\'%d\')">生成报表</p>' % (obj.id, obj.id)
+        r = mark_safe(button)
+        return r
+
+    def get_media(self):
+        media = super(API_pathAdmin, self).get_media() + self.vendor('xadmin.page.list.js', 'xadmin.page.form.js')
+        media += self.vendor('xadmin.list.box.js', 'xadmin.form.css')
+        return media
 class GET_timeAdmin(object):
     list_display = ['name','path','xtime','get_time']
     search_fields = ['name','path','get_time']  # 搜索栏
