@@ -4,8 +4,8 @@ from django.db import models
 
 class Param(models.Model):
     '''参数及参数值'''
-    query = models.CharField(max_length=1000, verbose_name="参数",blank=True, null=True,default="")
-    value = models.CharField(max_length=1000, verbose_name="参数值",blank=True, null=True,default="")
+    query = models.CharField(max_length=1000, verbose_name="参数", default="")
+    value = models.CharField(max_length=1000, verbose_name="参数值", default="")
     # 创建时间
     create_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
     # 最后更新时间
