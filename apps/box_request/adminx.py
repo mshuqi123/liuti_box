@@ -48,16 +48,20 @@ class Http_connectAdmin(object):
     list_per_page = 10
     model_icon = 'fa fa-unlock'
 class API_pathAdmin(object):
-    list_display = ['name','id','path','state','update_time', '操作']
+    list_display = ['name','id','path','state','update_time', '生成报表','查看报表']
     search_fields = ['id','name','path','state']  # 搜索栏
     list_filter = ['state']  # 过滤器
     list_per_page = 10
     model_icon = 'fa fa-hdd-o'
 
-    def 操作(self, obj):
+    def 生成报表(self, obj):
         button = '<p id="%d" class="default btn btn-primary hide-xs" onclick="click_action_info(\'%d\')">生成报表</p>' % (obj.id, obj.id)
         r = mark_safe(button)
         return r
+    def 查看报表(self, obj):
+        button2 = '<a id="%d" class="default btn btn-primary hide-xs" href="http://129.28.161.243/liuti_box/liuti_box/static/report/%d.html">查看报表</a>' % (obj.id,obj.id)
+        r2 = mark_safe(button2)
+        return r2
 
     def get_media(self):
         media = super(API_pathAdmin, self).get_media() + self.vendor('xadmin.page.list.js', 'xadmin.page.form.js')
