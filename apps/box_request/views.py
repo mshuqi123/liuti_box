@@ -65,27 +65,30 @@ def get_boxapitime(request):
         tpath = list(url)[0]["path"]
         zdata = []
         xtime = Get_time.objects.filter(path=tpath).order_by("get_time").values()
-        data = []
-        for i in xtime:
-            p = i["xtime"]
-            data.append(p)
-        if len(data) != 0:
-            zdata.append(data)
-        performance_data = os.path.join(settings.BASE_DIR, 'static\\report')
-        html_path = "%s\\%s.html" % (performance_data, pid)
-        title = "闪电盒子-编号%s号接口响应时间报表" %pid
-        case_list = []
-        for r in zdata:
-            for z in range(len(r)):
-                case_list.append(z)
-            bar = Line(title, "图表纵轴为响应时间数据大小，横轴为接口请求时间得正序编号，直线为平均值")
-            bar.add("time (单位：秒）", case_list, r, label_color=['#B22222'], mark_line=["average"],
-                        mark_point=["max", "min"], xaxis_interval=0, xaxis_rotate=90)
-            bar.use_theme("vintage")
-            bar.render(html_path)
-        return JsonResponse({'code': 200, 'message': '生成报表成功'})
+        if xtime:
+            data = []
+            for i in xtime:
+                p = i["xtime"]
+                data.append(p)
+            if len(data) != 0:
+                zdata.append(data)
+            performance_data = os.path.join(settings.BASE_DIR, 'static\\report')
+            html_path = "%s\\%s.html" % (performance_data, pid)
+            title = "闪电盒子-编号%s号接口响应时间报表" %pid
+            case_list = []
+            for r in zdata:
+                for z in range(len(r)):
+                    case_list.append(z)
+                bar = Line(title, "图表纵轴为响应时间数据大小，横轴为接口请求时间得正序编号，直线为平均值")
+                bar.add("time (单位：秒）", case_list, r, label_color=['#B22222'], mark_line=["average"],
+                            mark_point=["max", "min"], xaxis_interval=0, xaxis_rotate=90)
+                bar.use_theme("vintage")
+                bar.render(html_path)
+            return JsonResponse({'code': 200, 'message': '生成报表成功'})
+        else:
+            return JsonResponse({'code': 404, 'message': '该接口暂时无数据，不可生成成报表'})
     except 	IndexError:
-        return JsonResponse({'code': 404, 'message': '参数错误'})
+        return JsonResponse({'code': 404, 'message': '参数错误，没有该编号的接口'})
 
 
 

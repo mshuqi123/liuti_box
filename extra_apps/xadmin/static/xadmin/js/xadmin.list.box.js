@@ -6,6 +6,6 @@
                     id: x,
                 },
                 function (result) {
-                    alert("生成响应时间报表成功");
+                    alert(result.message);
                 });
     }
