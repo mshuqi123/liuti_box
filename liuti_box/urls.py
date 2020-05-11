@@ -23,4 +23,5 @@ from django.conf.urls import url,include
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
     url(r'^box_request/', include(('box_request.urls','box_request'), namespace='box_request')),  # 异常请求模块
+    url(r'^data_handle/', include(('data_handle.urls','data_handle'), namespace='data_handle')),  # 数据处理模块
 ]

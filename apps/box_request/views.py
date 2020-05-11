@@ -4,8 +4,10 @@ from box_request.models import Requests,Response,Http_connect,Api_path,Get_time
 from django.db import connection
 from django.core import serializers
 import requests,os,time
-from pyecharts import Line
+from pyecharts import *
 from liuti_box import settings
+import logging
+log = logging.getLogger("django")
 # Create your views here.
 
 def get_request(request):
@@ -25,6 +27,7 @@ def get_request(request):
 def get_response(request):
     data = {}
     results = Response.objects.filter(state='Q').order_by("-update_time").values()
+    log.info(list(results))
     if results:
         data['code'] = 200
         data["data"] = list(results)[0]
@@ -72,8 +75,8 @@ def get_boxapitime(request):
                 data.append(p)
             if len(data) != 0:
                 zdata.append(data)
-            performance_data = os.path.join(settings.BASE_DIR, 'static\\report')
-            html_path = "%s\\%s.html" % (performance_data, pid)
+            performance_data = os.path.join(settings.BASE_DIR, 'static/report')
+            html_path = "%s/%s.html" % (performance_data, pid)
             title = "闪电盒子-编号%s号接口响应时间报表" %pid
             case_list = []
             for r in zdata:
