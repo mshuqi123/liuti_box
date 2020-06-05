@@ -23,7 +23,7 @@ def get_request(request):
         data["param"] = param
         return JsonResponse(data, safe=False,json_dumps_params={'ensure_ascii':False})
     else:
-        return JsonResponse({'status': 10022, 'message': '请求错误，请重试！'})
+        return JsonResponse({'status': 10022, 'message': '请求错误，请您再次重试！'})
 def get_response(request):
     data = {}
     results = Response.objects.filter(state='Q').order_by("-update_time").values()
