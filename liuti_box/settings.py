@@ -27,7 +27,7 @@ SECRET_KEY = 'jg@m9o3ddp1u%vsb(w2j@!r$ej1y*9t*uv%3k-oyz6h7$vr%x)'
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -42,8 +42,10 @@ INSTALLED_APPS = [
     # 'tinymce',     # 富文本编辑器
     'box_request',
     'data_handle',
+    'vacuum_hlz',
     'xadmin',            # 新添加
     'crispy_forms',      # 新添加
+    'reversion',      # 新添加
 ]
 
 MIDDLEWARE = [
@@ -143,6 +145,15 @@ TINYMCE_DEFAULT_CONFIG = {
     'height': 400,
 }
 
+#  celery 配置连接redis
+BROKER_URL = 'redis://129.28.161.243:6379'
+CELERY_RESULT_BACKEND = 'redis://129.28.161.243:6379'
+
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TIMEZONE = 'Asia/Shanghai'
+CELERY_ENABLE_UTC = True
 
 # 日志配置部分
 log_path = os.path.join(BASE_DIR, "logs")
