@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a782f09b-3c3d-44da-9ac8-0a5f2fcca454" name="Default" comment="测试分支">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/vacuum_hlz/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/liuti_box.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/liuti_box.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liuti_box/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/liuti_box/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liuti_box/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/liuti_box/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liuti_box/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/liuti_box/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/apps/vacuum_hlz/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
