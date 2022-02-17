@@ -10,3 +10,4 @@ venv/
 .env
 logs/all.log
 log.txt
+.idea
