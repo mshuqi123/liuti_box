@@ -66,3 +66,4 @@ INFO 2022-01-24 14:52:28,394 autoreload 217 C:\liuti\liuti_box\apps\vacuum_hlz\v
 INFO 2022-01-24 14:52:31,133 autoreload 597 Watching for file changes with StatReloader
 INFO 2022-01-24 14:52:54,217 autoreload 217 C:\liuti\liuti_box\liuti_box\celery.py changed, reloading.
 INFO 2022-01-24 14:52:56,818 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-25 10:06:00,792 autoreload 597 Watching for file changes with StatReloader

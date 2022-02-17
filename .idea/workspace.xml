@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a782f09b-3c3d-44da-9ac8-0a5f2fcca454" name="Default" comment="测试分支">
-      <change afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../self/script-console" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -112,6 +112,8 @@
       <workItem from="1593493558018" duration="736000" />
       <workItem from="1604479633002" duration="21000" />
       <workItem from="1642994362740" duration="2676000" />
+      <workItem from="1644656844394" duration="2640000" />
+      <workItem from="1644808807748" duration="5671000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0版本节点">
       <created>1589185135170</created>
@@ -187,10 +189,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="测试分支" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="270" y="56" key="SettingsEditor" timestamp="1604479653028">
+    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1645017710876">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1645017710876" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1643075747534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604479653028" />
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1643075747534" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
