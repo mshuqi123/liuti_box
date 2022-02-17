@@ -1,12 +1,68 @@
-INFO 2019-11-25 21:56:37,432 autoreload 597 Watching for file changes with StatReloader
-INFO 2019-11-25 21:56:45,826 basehttp 154 "GET /box_request/response HTTP/1.1" 200 199
-INFO 2019-11-25 21:57:18,373 autoreload 217 C:\liuti\liuti_box\apps\box_request\views.py changed, reloading.
-INFO 2019-11-25 21:57:20,194 autoreload 597 Watching for file changes with StatReloader
-INFO 2019-11-25 21:57:23,506 views 30 [{'id': 1, 'fname': '修改包名', 'state': 'Q', 'old': 'com.taobao.taobao', 'new': 'c.l.a', 'create_time': datetime.datetime(2019, 11, 25, 14, 55, 25, 475262), 'update_time': datetime.datetime(2019, 11, 25, 14, 55, 25, 475293)}]
-INFO 2019-11-25 21:57:23,510 basehttp 154 "GET /box_request/response HTTP/1.1" 200 199
-INFO 2019-11-25 21:58:53,543 autoreload 217 C:\liuti\liuti_box\liuti_box\settings.py changed, reloading.
-INFO 2019-11-25 21:58:55,362 autoreload 597 Watching for file changes with StatReloader
-INFO 2019-11-25 21:58:56,709 views 30 [{'id': 1, 'fname': '修改包名', 'state': 'Q', 'old': 'com.taobao.taobao', 'new': 'c.l.a', 'create_time': datetime.datetime(2019, 11, 25, 14, 55, 25, 475262), 'update_time': datetime.datetime(2019, 11, 25, 14, 55, 25, 475293)}]
-INFO 2019-11-25 21:58:56,710 basehttp 154 "GET /box_request/response HTTP/1.1" 200 199
-INFO 2019-11-25 22:00:04,653 autoreload 217 C:\liuti\liuti_box\liuti_box\settings.py changed, reloading.
-INFO 2019-11-25 22:00:06,358 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 11:21:35,094 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 11:22:00,464 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2022-01-24 11:22:00,549 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2022-01-24 11:22:00,603 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2022-01-24 11:22:00,603 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2022-01-24 11:22:00,604 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2022-01-24 11:22:00,604 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2022-01-24 11:22:00,605 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+INFO 2022-01-24 11:22:00,606 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2022-01-24 11:22:00,620 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2022-01-24 11:22:00,621 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2022-01-24 11:22:00,623 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2022-01-24 11:22:00,623 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2022-01-24 11:22:00,642 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2022-01-24 11:22:00,646 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2022-01-24 11:22:00,647 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2022-01-24 11:22:00,648 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2022-01-24 11:22:00,649 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2022-01-24 11:22:00,650 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2022-01-24 11:22:00,651 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2022-01-24 11:22:00,751 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+WARNING 2022-01-24 11:22:00,777 log 228 Not Found: /favicon.ico
+WARNING 2022-01-24 11:22:00,778 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2317
+INFO 2022-01-24 11:22:09,396 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2022-01-24 11:22:12,252 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 23497
+INFO 2022-01-24 11:22:12,296 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2022-01-24 11:22:12,893 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2022-01-24 11:22:12,904 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2022-01-24 11:22:13,291 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:22:51,735 basehttp 154 "GET /xadmin/box_request/requests/ HTTP/1.1" 200 34712
+INFO 2022-01-24 11:22:51,776 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2022-01-24 11:22:51,776 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2022-01-24 11:22:51,777 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2022-01-24 11:22:51,777 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2022-01-24 11:22:51,778 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2022-01-24 11:22:51,778 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2022-01-24 11:22:52,730 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:22:56,082 basehttp 154 "GET /xadmin/box_request/param/ HTTP/1.1" 200 38054
+INFO 2022-01-24 11:22:56,125 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2022-01-24 11:22:56,491 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:22:59,695 basehttp 154 "GET /xadmin/box_request/api_path/ HTTP/1.1" 200 41397
+INFO 2022-01-24 11:22:59,735 basehttp 154 "GET /static/xadmin/js/xadmin.list.box.js HTTP/1.1" 200 816
+INFO 2022-01-24 11:23:00,099 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:31:29,698 basehttp 154 "GET /xadmin/vacuum_hlz/user/ HTTP/1.1" 200 39676
+INFO 2022-01-24 11:31:30,119 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:31:33,785 basehttp 154 "GET /xadmin/vacuum_hlz/user_equipment/ HTTP/1.1" 200 34587
+INFO 2022-01-24 11:31:34,855 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:31:37,392 basehttp 154 "GET /xadmin/vacuum_hlz/user_bucket/ HTTP/1.1" 200 32434
+INFO 2022-01-24 11:31:37,852 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:31:41,044 basehttp 154 "GET /xadmin/vacuum_hlz/bucket/ HTTP/1.1" 200 39326
+INFO 2022-01-24 11:31:41,491 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 11:31:49,923 basehttp 154 "GET /xadmin/data_handle/emmagee/ HTTP/1.1" 200 41745
+INFO 2022-01-24 11:31:49,982 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2022-01-24 11:31:49,982 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2022-01-24 11:31:49,983 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2022-01-24 11:31:50,402 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2022-01-24 14:35:56,763 autoreload 217 C:\liuti\liuti_box\liuti_box\__init__.py changed, reloading.
+INFO 2022-01-24 14:36:01,027 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 14:40:09,491 autoreload 217 C:\liuti\liuti_box\liuti_box\settings.py changed, reloading.
+INFO 2022-01-24 14:40:12,259 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 14:40:40,591 autoreload 217 C:\liuti\liuti_box\liuti_box\settings.py changed, reloading.
+INFO 2022-01-24 14:40:43,077 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 14:42:49,267 autoreload 217 C:\liuti\liuti_box\liuti_box\settings.py changed, reloading.
+INFO 2022-01-24 14:42:52,218 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 14:52:28,394 autoreload 217 C:\liuti\liuti_box\apps\vacuum_hlz\views.py changed, reloading.
+INFO 2022-01-24 14:52:31,133 autoreload 597 Watching for file changes with StatReloader
+INFO 2022-01-24 14:52:54,217 autoreload 217 C:\liuti\liuti_box\liuti_box\celery.py changed, reloading.
+INFO 2022-01-24 14:52:56,818 autoreload 597 Watching for file changes with StatReloader
